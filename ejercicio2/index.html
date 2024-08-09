@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Calcular Nota Final</h1>
+        <form id="gradesForm">
+            <div class="mb-3">
+                <label for="firstPartial" class="form-label">Primer Parcial (30%)</label>
+                <input type="number" class="form-control" id="firstPartial" placeholder="Ingrese la nota del primer parcial" required>
+            </div>
+            <div class="mb-3">
+                <label for="secondPartial" class="form-label">Segundo Parcial (30%)</label>
+                <input type="number" class="form-control" id="secondPartial" placeholder="Ingrese la nota del segundo parcial" required>
+            </div>
+            <div class="mb-3">
+                <label for="thirdPartial" class="form-label">Tercer Parcial (40%)</label>
+                <input type="number" class="form-control" id="thirdPartial" placeholder="Ingrese la nota del tercer parcial" required>
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" id="calculateBtn">Calcular</button>
+                <button type="button" class="btn btn-secondary" id="resetBtn">Limpiar</button>
+            </div>
+        </form>
+        <div id="resultMessage" class="alert d-none"></div>
+    </div>
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
